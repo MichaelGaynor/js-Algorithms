@@ -7,9 +7,22 @@ function isPalindrome(num){
   var arrayReverse1 = numArray1.reverse();
   var arrayReverse2 = arrayReverse1.join("");
   var arrayReverse = parseInt(arrayReverse2);
-  // var bool = true;
   var bool = (num === arrayReverse);
   return bool;
+}
+
+var pal = [1]
+for (let i = 100; i<1000; i++){
+  for (let j = 100; j<1000; j++){
+    f = (i*j);
+    if((isPalindrome(f))&&(f > pal[0])){
+      pal.pop();
+      pal.push(f);
+    }
+  }
+ }
+console.log(`${pal[0]}, a palindrome, is the highest possible palindrome made by multiplying two 3 digit numbers! Cool!`)
+
   // console.log(num);
   // console.log(arrayReverse1);
   // console.log(arrayReverse2);
@@ -23,7 +36,7 @@ function isPalindrome(num){
   //   // bool = false
   // }
   // console.log(bool);
-}
+// }
  // console.log(isPalindrome(1001));
  // console.log(isPalindrome(12345));
 
@@ -32,15 +45,15 @@ function isPalindrome(num){
 //   for (let j = 100; j<1000; j++){
 //     f = (i*j);
 //     if((isPalindrome(f))&&(f > pal[0])){
-//       // if(f > pal[0]){
-//         // console.log(pal);
-//       pal.pop();
-//       // pal.push("palindrome":"f","i":"i","j":"j");
-//       pal.push(f);
-//       // console.log(pal)
-//     }
-//   }
-//  }
+      // if(f > pal[0]){
+        // console.log(pal);
+      // pal.pop();
+      // pal.push("palindrome":"f","i":"i","j":"j");
+      // pal.push(f);
+      // console.log(pal)
+ //    }
+ //  }
+ // }
 // console.log(`${pal[0]}, a palindrome, is the highest possible palindrome made by multiplying two 3 digit numbers! Cool!`)
 // Those numbers are ${pal[0]("i")} and ${pal[0]("j")}
 

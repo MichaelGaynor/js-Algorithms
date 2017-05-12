@@ -48,16 +48,16 @@ function isPalindrome(num){
 // --------------------------------Algorithm 2
 
 var found = false;
-for (let i=1; found == false; i++){
+for (let i=2520; found == false; i+=2520){
   x = 0;
-  for (let j=1; j<=20;j++){
+  for (let j=20; j>=11;j--){
     if(i % j != 0){
       break;
     }else{
       x++
     }
   }
-  if (x == 20){
+  if (x == 10){
       console.log(i);
       found = true;
       break;
